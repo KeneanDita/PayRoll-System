@@ -9,17 +9,14 @@ public class FullTime extends Employee {
         this.overtime = hourAndHalf;
         this.salary = sal;
     }
-
     public double calculatePay() {
         double grossPay = this.getSalary() + this.getOvertime();
-        double tax = grossPay * 0.1; // 10% tax
+        double tax = grossPay * 0.1;
         return grossPay - tax;
     }
-
     public double getSalary() {
         return salary;
     }
-
     public double getOvertime() {
         return overtime;
     }
